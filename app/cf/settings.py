@@ -16,6 +16,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["kingship.info", "*"]
 
+# X_FRAME_OPTIONS = '*'
+
+
 
 # Application definition
 
