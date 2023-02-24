@@ -14,9 +14,11 @@ SECRET_KEY = "django-insecure-g7mxg=a_w1i*ww6kich#!2e$ynyw)iqn2*x0$co5o80r7q1)vp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["kingship.info", "*"]
+ALLOWED_HOSTS = ["kingship.info", 'localhost']
 
-# X_FRAME_OPTIONS = '*'
+CSRF_TRUSTED_ORIGINS = ["https://kingship.info"]
+
+X_FRAME_OPTIONS = '*'
 
 
 
