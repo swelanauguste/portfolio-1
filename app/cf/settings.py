@@ -14,12 +14,11 @@ SECRET_KEY = "django-insecure-g7mxg=a_w1i*ww6kich#!2e$ynyw)iqn2*x0$co5o80r7q1)vp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["kingship.info", 'localhost']
+ALLOWED_HOSTS = ["kingship.info", "localhost"]
 
-CSRF_TRUSTED_ORIGINS = ["https://kingship.info"]
+CSRF_TRUSTED_ORIGINS = ["https://kingship.info/"]
 
-X_FRAME_OPTIONS = '*'
-
+X_FRAME_OPTIONS = "*"
 
 
 # Application definition
@@ -50,7 +49,7 @@ ROOT_URLCONF = "cf.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR, 'templates'],
+        "DIRS": [BASE_DIR, "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -128,8 +127,6 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-CSRF_TRUSTED_ORIGINS = ["https://notices.kingship.info"]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [BASE_DIR / "static"]
